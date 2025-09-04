@@ -1,12 +1,12 @@
-defmodule Context.MixProject do
+defmodule Vault.MixProject do
   use Mix.Project
 
   @version "0.1.0"
-  @source_url "https://github.com/dimamik/context"
+  @source_url "https://github.com/dimamik/vault"
 
   def project do
     [
-      app: :context,
+      app: :vault,
       version: @version,
       elixir: "~> 1.18",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -15,10 +15,10 @@ defmodule Context.MixProject do
       aliases: aliases(),
       # Hex
       package: package(),
-      description: "Context: a process-scoped hierarchical data storage library",
+  description: "Vault: a process-scoped hierarchical data storage library",
       # Docs
       docs: [
-        main: "Context",
+        main: "Vault",
         api_reference: false,
         source_ref: "v#{@version}",
         source_url: @source_url,
